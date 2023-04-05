@@ -1,59 +1,190 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farewell to Mr. Kleinhans</title>
     <style>
+      /* Global styles */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
       body {
-        background-color: #f2f2f2;
         font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        background-color: #f2f2f2;
+      }
+
+      /* Header styles */
+      header {
+        background-color: #008CBA;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
       }
 
       h1 {
-        color: #008CBA;
-        text-align: center;
         font-size: 36px;
+        margin: 0;
+        padding: 20px;
       }
 
-      p {
-        font-size: 20px;
-        line-height: 1.5;
-        margin: 20px;
+      /* Navigation styles */
+      nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
       }
 
-      .container {
+      nav a {
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      nav a:hover {
+        background-color: #008CBA;
+      }
+
+      /* Main content styles */
+      main {
         max-width: 800px;
-        margin: 0 auto;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
 
       .image {
         text-align: center;
+        margin-bottom: 20px;
       }
 
       img {
         max-width: 100%;
         height: auto;
       }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      blockquote {
+        font-style: italic;
+        margin: 20px;
+        padding: 10px;
+        border-left: 5px solid #008CBA;
+        background-color: #f9f9f9;
+      }
+
+      /* Footer styles */
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      footer a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* Responsive styles */
+      @media screen and (max-width: 600px) {
+        h1 {
+          font-size: 28px;
+        }
+
+        nav {
+          display: block;
+        }
+
+        nav a {
+          display: block;
+          margin: 5px;
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="container">
+    <!-- Header -->
+    <header>
       <h1>Farewell to Mr. Kleinhans</h1>
-      <div class="image">
-        <img src="https://thumbs.dreamstime.com/b/time-to-say-goodbye-message-pin-bulletin-board-64928665.jpg" alt="Mr. Kleinhans">
-      </div>
-      <p>
-        Dear Mr. Kleinhans,
-        <br><br>
-        We are saddened to hear that you are leaving us, but we want to take this opportunity to express our heartfelt gratitude for everything you have done for us during your time here at our school. Your dedication and enthusiasm for teaching physics and computer science have inspired us all, and we are grateful for the impact you have had on our lives.
-        <br><br>
-        Your "Feel Good Fridays" speeches always brightened up our week, and your kind and caring nature made our time in your class a truly memorable experience. We will miss your positive energy and unwavering commitment to helping us learn and grow.
-        <br><br>
-        We hope that you enjoy your well-deserved break, and we wish you all the best in your future endeavors. Thank you for being an amazing teacher and a wonderful person.
-        <br><br>
-        Sincerely,
-        <br>
-        [Your Names Here]
-      </p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="#about">About</a>
+      <a href="#memories">Memories</a>
+      <a href="#gift">Gift</a>
+      <a href="#contact">Contact</a>
+</nav>
+
+<!-- Main content -->
+<main>
+  <section id="about">
+    <div class="image">
+      <img src="https://www.example.com/mr-kleinhans.jpg" alt="Mr. Kleinhans">
     </div>
-  </body>
+    <h2>About Mr. Kleinhans</h2>
+    <p>Mr. Kleinhans has been teaching physics for over 20 years and has inspired countless students to pursue careers in science and technology. He was also a successful computer science startup founder and businessman before dedicating his time to teaching and raising his kids.</p>
+    <p>Mr. Kleinhans was always eager to share his knowledge and experience with his students, whether through his engaging lectures, his heartwarming "Feel Good Fridays" speeches, or his leadership of the Computer Club at our school.</p>
+    <blockquote>"Teaching physics is not just about understanding the laws of nature, but also about understanding ourselves and our place in the universe."</blockquote>
+  </section>
+
+  <section id="memories">
+    <h2>Memories of Mr. Kleinhans</h2>
+    <p>Mr. Kleinhans will always be remembered for his passion for teaching, his kindness, and his sense of humor. Whether he was telling jokes during class, organizing field trips to science museums, or bringing donuts as incentives for his students, he always made learning fun and rewarding.</p>
+    <p>Do you have any memories or messages for Mr. Kleinhans? Share them with us in the comments section below.</p>
+  </section>
+
+  <section id="gift">
+    <h2>A Gift for Mr. Kleinhans</h2>
+    <p>To show our appreciation for everything that Mr. Kleinhans has done for us, we would like to present him with a special gift. We have collected some funds and would like to give him a gift card for his favorite restaurant or store, or perhaps a donation to a charity of his choice.</p>
+    <p>If you have any suggestions or ideas for a gift, please let us know in the comments section below.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or comments, please feel free to contact us using the form below.</p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>Thank you for everything, Mr. Kleinhans. You will be missed.</p>
+  <p>Created by the students of ACES.</p>
+  <p><a href="#">Back to top</a></p>
+</footer>
+</body>
 </html>
